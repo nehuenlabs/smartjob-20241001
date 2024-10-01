@@ -1,0 +1,43 @@
+@startuml
+class com.example.UserApiApplication
+class com.example.config.ErrorMessages
+class com.example.config.SwaggerConfig
+class com.example.controller.GlobalExceptionHandler
+class com.example.controller.UserController
+class com.example.domain.model.Phone
+class com.example.domain.model.User
+class com.example.dto.PhoneDTO
+class com.example.dto.UserDTO
+class com.example.exception.RecordNotFoundException
+class com.example.exception.ValidationException
+class com.example.mapper.PhoneMapper
+class com.example.mapper.UserMapper
+class com.example.service.impl.UserServiceImpl
+interface com.example.domain.repository.PhoneRepository
+interface com.example.domain.repository.UserRepository
+interface com.example.service.UserService
+com.example.controller.GlobalExceptionHandler ..> com.example.exception.RecordNotFoundException
+com.example.controller.GlobalExceptionHandler ..> com.example.exception.ValidationException
+com.example.controller.UserController ..> com.example.dto.PhoneDTO
+com.example.controller.UserController ..> com.example.dto.UserDTO
+com.example.controller.UserController ..> com.example.service.UserService
+com.example.mapper.PhoneMapper ..> com.example.domain.model.Phone
+com.example.mapper.PhoneMapper ..> com.example.dto.PhoneDTO
+com.example.mapper.UserMapper ..> com.example.domain.model.User
+com.example.mapper.UserMapper ..> com.example.dto.UserDTO
+com.example.service.impl.UserServiceImpl ..> com.example.config.ErrorMessages
+com.example.service.impl.UserServiceImpl ..> com.example.dto.PhoneDTO
+com.example.service.impl.UserServiceImpl ..> com.example.dto.UserDTO
+com.example.service.impl.UserServiceImpl ..> com.example.exception.RecordNotFoundException
+com.example.service.impl.UserServiceImpl ..> com.example.exception.ValidationException
+com.example.service.impl.UserServiceImpl ..> com.example.mapper.PhoneMapper
+com.example.service.impl.UserServiceImpl ..> com.example.mapper.UserMapper
+com.example.service.impl.UserServiceImpl ..> com.example.domain.repository.PhoneRepository
+com.example.service.impl.UserServiceImpl ..> com.example.domain.repository.UserRepository
+com.example.service.impl.UserServiceImpl --|> com.example.service.UserService
+com.example.domain.repository.PhoneRepository ..> com.example.domain.model.Phone
+com.example.domain.repository.UserRepository ..> com.example.domain.model.User
+com.example.service.UserService ..> com.example.dto.PhoneDTO
+com.example.service.UserService ..> com.example.dto.UserDTO
+
+@enduml

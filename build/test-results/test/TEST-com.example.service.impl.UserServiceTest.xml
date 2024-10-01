@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.service.impl.UserServiceTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2024-10-01T15:42:53" hostname="MARCELLOW" time="0.606">
+  <properties/>
+  <testcase name="findUserById_ShouldReturnUserDTO_WhenUserExists()" classname="com.example.service.impl.UserServiceTest" time="0.432"/>
+  <testcase name="deleteUser_ShouldThrowException_WhenDoesNotExist()" classname="com.example.service.impl.UserServiceTest" time="0.022"/>
+  <testcase name="deletePhone_ShouldDeletePhone_WhenExists()" classname="com.example.service.impl.UserServiceTest" time="0.009"/>
+  <testcase name="findUserByEmail_ShouldThrowException_WhenUserDoesNotExist()" classname="com.example.service.impl.UserServiceTest" time="0.018"/>
+  <testcase name="savePhone_ShouldThrowException_WhenNumberIsInvalid()" classname="com.example.service.impl.UserServiceTest" time="0.01"/>
+  <testcase name="savePhone_ShouldSaveAndReturnPhoneDTO_WhenValid()" classname="com.example.service.impl.UserServiceTest" time="0.008"/>
+  <testcase name="deletePhone_ShouldThrowException_WhenDoesNotExist()" classname="com.example.service.impl.UserServiceTest" time="0.03"/>
+  <testcase name="findUserByEmail_ShouldReturnUserDTO_WhenUserExists()" classname="com.example.service.impl.UserServiceTest" time="0.005"/>
+  <testcase name="saveUser_ShouldThrowException_WhenPasswordIsInvalid()" classname="com.example.service.impl.UserServiceTest" time="0.012"/>
+  <testcase name="saveUser_ShouldThrowException_WhenEmailIsInvalid()" classname="com.example.service.impl.UserServiceTest" time="0.012"/>
+  <testcase name="findUserById_ShouldThrowException_WhenUserDoesNotExist()" classname="com.example.service.impl.UserServiceTest" time="0.016"/>
+  <testcase name="deleteUser_ShouldDeleteUser_WhenExists()" classname="com.example.service.impl.UserServiceTest" time="0.004"/>
+  <testcase name="saveUser_ShouldSaveAndReturnUserDTO_WhenValid()" classname="com.example.service.impl.UserServiceTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

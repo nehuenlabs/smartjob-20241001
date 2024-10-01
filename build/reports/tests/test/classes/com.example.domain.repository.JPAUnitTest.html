@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - JPAUnitTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>JPAUnitTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.domain.repository.html">com.example.domain.repository</a> &gt; JPAUnitTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.573s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">whenDeleteUser_thenUserShouldNotExist()</td>
+<td class="success">0.049s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">whenFindByEmail_thenReturnUser()</td>
+<td class="success">0.413s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">whenSaveUser_thenUserIsSaved()</td>
+<td class="success">0.111s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-10-01T12:42:51.694-03:00  INFO 38348 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.domain.repository.JPAUnitTest]: JPAUnitTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-01T12:42:51.798-03:00  INFO 38348 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.UserApiApplication for test class com.example.domain.repository.JPAUnitTest
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2024-10-01T12:42:51.858-03:00  INFO 38348 --- [    Test worker] c.example.domain.repository.JPAUnitTest  : Starting JPAUnitTest using Java 21.0.4 with PID 38348 (started by marce in C:\___MIRH\postulaciones\smartjob\20241001)
+2024-10-01T12:42:51.858-03:00  INFO 38348 --- [    Test worker] c.example.domain.repository.JPAUnitTest  : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-10-01T12:42:52.179-03:00  INFO 38348 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-01T12:42:52.223-03:00  INFO 38348 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2024-10-01T12:42:52.274-03:00  INFO 38348 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-10-01T12:42:52.337-03:00  INFO 38348 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:51c7257e-21ad-47bd-977c-c7c2e05ef1fa;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-10-01T12:42:52.395-03:00  INFO 38348 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-01T12:42:52.403-03:00  INFO 38348 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-01T12:42:52.424-03:00  INFO 38348 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-01T12:42:52.427-03:00  WARN 38348 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-01T12:42:52.525-03:00  INFO 38348 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table phones (id bigint generated by default as identity, citycode varchar(255) not null, countrycode varchar(255) not null, number varchar(255) not null, user_id uuid, primary key (id))
+Hibernate: create table users (id uuid not null, created timestamp(6), email varchar(255) not null, is_active boolean not null, last_login timestamp(6), modified timestamp(6), name varchar(255) not null, password varchar(255) not null, token varchar(255), primary key (id))
+Hibernate: alter table if exists users drop constraint if exists UK6dotkott2kjsp8vw4d0m25fb7
+Hibernate: alter table if exists users add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email)
+Hibernate: alter table if exists phones add constraint FKmg6d77tgqfen7n1g763nvsqe3 foreign key (user_id) references users
+2024-10-01T12:42:52.543-03:00  INFO 38348 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-01T12:42:52.646-03:00  INFO 38348 --- [    Test worker] c.example.domain.repository.JPAUnitTest  : Started JPAUnitTest in 0.841 seconds (process running for 13.031)
+Hibernate: insert into users (created,email,is_active,last_login,modified,name,password,token,id) values (?,?,?,?,?,?,?,?,?)
+Hibernate: select u1_0.id,u1_0.created,u1_0.email,u1_0.is_active,u1_0.last_login,u1_0.modified,u1_0.name,u1_0.password,u1_0.token from users u1_0 where u1_0.email=?
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 1, 2024, 12:42:54 PM</p>
+</div>
+</div>
+</body>
+</html>
